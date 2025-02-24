@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acronym Search Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        #search-box {
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 2px solid #e74c3c;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        #acronym-list {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left; /* Align acronyms to the left */
+        }
+        #acronym-list li {
+            background-color: #34495e;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #acronym-list li:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>⚛️ Acronym Search Tool ⚛️</h1>
+    <input type="text" id="search-box" placeholder="Type to search...">
+    <ul id="acronym-list">
+        <!-- Placeholder acronyms -->
+        <li>API - Application Programming Interface</li>
+        <li>HTML - HyperText Markup Language</li>
+        <li>CSS - Cascading Style Sheets</li>
+        <li>JS - JavaScript</li>
+        <li>HTTP - HyperText Transfer Protocol</li>
+        <li>HTTPS - HyperText Transfer Protocol Secure</li>
+        <li>URL - Uniform Resource Locator</li>
+        <li>IP - Internet Protocol</li>
+        <li>TCP - Transmission Control Protocol</li>
+        <li>UDP - User Datagram Protocol</li>
+        <li>SQL - Structured Query Language</li>
+        <li>DB - Database</li>
+        <li>JSON - JavaScript Object Notation</li>
+        <li>XML - eXtensible Markup Language</li>
+        <li>DOM - Document Object Model</li>
+        <li>SEO - Search Engine Optimization</li>
+        <li>UI - User Interface</li>
+        <li>UX - User Experience</li>
+        <li>IDE - Integrated Development Environment</li>
+        <li>OOP - Object-Oriented Programming</li>
+        <li>REST - Representational State Transfer</li>
+        <li>SOAP - Simple Object Access Protocol</li>
+        <li>FTP - File Transfer Protocol</li>
+        <li>SSH - Secure Shell</li>
+        <li>CLI - Command Line Interface</li>
+        <li>GUI - Graphical User Interface</li>
+        <li>RAM - Random Access Memory</li>
+        <li>ROM - Read-Only Memory</li>
+        <li>CPU - Central Processing Unit</li>
+        <li>GPU - Graphics Processing Unit</li>
+        <li>SSD - Solid State Drive</li>
+        <li>HDD - Hard Disk Drive</li>
+        <li>BIOS - Basic Input/Output System</li>
+        <li>OS - Operating System</li>
+        <li>VM - Virtual Machine</li>
+        <li>VPN - Virtual Private Network</li>
+        <li>LAN - Local Area Network</li>
+        <li>WAN - Wide Area Network</li>
+        <li>MAC - Media Access Control</li>
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchBox = document.getElementById('search-box');
+            const acronymList = document.getElementById('acronym-list');
+            const acronyms = Array.from(acronymList.getElementsByTagName('li'));
+
+            searchBox.addEventListener('input', () => {
+                const filter = searchBox.value.toUpperCase();
+                acronyms.forEach(acronym => {
+                    const text = acronym.textContent || acronym.innerText;
+                    if (text.toUpperCase().startsWith(filter)) {
+                        acronym.style.display = '';
+                    } else {
+                        acronym.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
