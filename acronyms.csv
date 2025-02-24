@@ -1,4 +1,3 @@
-acronym, definition
 3D,3 Dimensional
 A/D,Analog to Digital Converter
 AAI,Accept As Is
@@ -195,7 +194,7 @@ DCI,Drawing/Document Change Instruction
 DCP,Design Change Package
 DCR,Document Change Request
 DCR , direct current resistance testing
-DCS , Dual Check Safety (FANUC speed check? as it pertains to robot safety)
+DCS , Dual Check Safety
 DDM,Design Data Management
 DDP,Detailed Design Plan
 DDR,Deviation Disposition Request
@@ -437,7 +436,7 @@ JHSC,Joint Health and Safety Committee
 JNB,Junction Box
 JOP,Jump Of Point
 JV,Joint Venture
-"K,U,M,D","Know, Understand, Measure, Delight"
+KUMD,Know Understand Measure Delight
 KPI,Key Performance Indicator
 KVM,Kernel-based Virtual Machine
 LAT,Lateral
@@ -505,7 +504,7 @@ MOL,Middle of Life
 MON,Monitor
 MOU,Memorandum of Understanding
 MOX,Mixed Oxide Fuel
-MPCa,Maximum Permissible Concentration in air is the standard unit for indicating the biological hazard of a radiological atmosphere
+MPCa,Maximum Permissible Concentration in Air
 MPE , Maximum permissible exposure  (lasers)
 MRB,Material Review Board
 MRM,Management Review Meeting
@@ -824,7 +823,7 @@ TC,Transfer Can
 TC,Terms and Conditions
 TCC,Temporary Configuration Change
 TCC , tool change cart 
-TCCL,"Transport Canada, Clear Language Regulations"
+TCCL,Transport Canada Clear Language Regulations
 TCD,Target Completion Date
 TCO,Total Cost of Operation
 TCO,Total Cost of Ownership
@@ -913,7 +912,6 @@ WTO,World Trade Organization
 WTS,Waste Tooling System
 WVM,Weekly Visual Management
 XFR,Transformer
-fr,for real
 eod,end of day
 eow,end of week
 eoy,end of year
