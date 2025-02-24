@@ -28,7 +28,7 @@
             padding: 0;
             max-width: 600px;
             margin: 0 auto;
-            text-align: left; /* Align acronyms to the left */
+            text-align: left;
         }
         #acronym-list li {
             background-color: #34495e;
@@ -36,9 +36,20 @@
             padding: 10px;
             border-radius: 5px;
             transition: background-color 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         #acronym-list li:hover {
             background-color: #e74c3c;
+        }
+        .acronym {
+            flex: 1;
+            text-align: left;
+        }
+        .full-form {
+            flex: 1;
+            text-align: right;
         }
     </style>
 </head>
@@ -47,45 +58,45 @@
     <input type="text" id="search-box" placeholder="Type to search...">
     <ul id="acronym-list">
         <!-- Placeholder acronyms -->
-        <li>API - Application Programming Interface</li>
-        <li>HTML - HyperText Markup Language</li>
-        <li>CSS - Cascading Style Sheets</li>
-        <li>JS - JavaScript</li>
-        <li>HTTP - HyperText Transfer Protocol</li>
-        <li>HTTPS - HyperText Transfer Protocol Secure</li>
-        <li>URL - Uniform Resource Locator</li>
-        <li>IP - Internet Protocol</li>
-        <li>TCP - Transmission Control Protocol</li>
-        <li>UDP - User Datagram Protocol</li>
-        <li>SQL - Structured Query Language</li>
-        <li>DB - Database</li>
-        <li>JSON - JavaScript Object Notation</li>
-        <li>XML - eXtensible Markup Language</li>
-        <li>DOM - Document Object Model</li>
-        <li>SEO - Search Engine Optimization</li>
-        <li>UI - User Interface</li>
-        <li>UX - User Experience</li>
-        <li>IDE - Integrated Development Environment</li>
-        <li>OOP - Object-Oriented Programming</li>
-        <li>REST - Representational State Transfer</li>
-        <li>SOAP - Simple Object Access Protocol</li>
-        <li>FTP - File Transfer Protocol</li>
-        <li>SSH - Secure Shell</li>
-        <li>CLI - Command Line Interface</li>
-        <li>GUI - Graphical User Interface</li>
-        <li>RAM - Random Access Memory</li>
-        <li>ROM - Read-Only Memory</li>
-        <li>CPU - Central Processing Unit</li>
-        <li>GPU - Graphics Processing Unit</li>
-        <li>SSD - Solid State Drive</li>
-        <li>HDD - Hard Disk Drive</li>
-        <li>BIOS - Basic Input/Output System</li>
-        <li>OS - Operating System</li>
-        <li>VM - Virtual Machine</li>
-        <li>VPN - Virtual Private Network</li>
-        <li>LAN - Local Area Network</li>
-        <li>WAN - Wide Area Network</li>
-        <li>MAC - Media Access Control</li>
+        <li><span class="acronym">API</span><span class="full-form">Application Programming Interface</span></li>
+        <li><span class="acronym">HTML</span><span class="full-form">HyperText Markup Language</span></li>
+        <li><span class="acronym">CSS</span><span class="full-form">Cascading Style Sheets</span></li>
+        <li><span class="acronym">JS</span><span class="full-form">JavaScript</span></li>
+        <li><span class="acronym">HTTP</span><span class="full-form">HyperText Transfer Protocol</span></li>
+        <li><span class="acronym">HTTPS</span><span class="full-form">HyperText Transfer Protocol Secure</span></li>
+        <li><span class="acronym">URL</span><span class="full-form">Uniform Resource Locator</span></li>
+        <li><span class="acronym">IP</span><span class="full-form">Internet Protocol</span></li>
+        <li><span class="acronym">TCP</span><span class="full-form">Transmission Control Protocol</span></li>
+        <li><span class="acronym">UDP</span><span class="full-form">User Datagram Protocol</span></li>
+        <li><span class="acronym">SQL</span><span class="full-form">Structured Query Language</span></li>
+        <li><span class="acronym">DB</span><span class="full-form">Database</span></li>
+        <li><span class="acronym">JSON</span><span class="full-form">JavaScript Object Notation</span></li>
+        <li><span class="acronym">XML</span><span class="full-form">eXtensible Markup Language</span></li>
+        <li><span class="acronym">DOM</span><span class="full-form">Document Object Model</span></li>
+        <li><span class="acronym">SEO</span><span class="full-form">Search Engine Optimization</span></li>
+        <li><span class="acronym">UI</span><span class="full-form">User Interface</span></li>
+        <li><span class="acronym">UX</span><span class="full-form">User Experience</span></li>
+        <li><span class="acronym">IDE</span><span class="full-form">Integrated Development Environment</span></li>
+        <li><span class="acronym">OOP</span><span class="full-form">Object-Oriented Programming</span></li>
+        <li><span class="acronym">REST</span><span class="full-form">Representational State Transfer</span></li>
+        <li><span class="acronym">SOAP</span><span class="full-form">Simple Object Access Protocol</span></li>
+        <li><span class="acronym">FTP</span><span class="full-form">File Transfer Protocol</span></li>
+        <li><span class="acronym">SSH</span><span class="full-form">Secure Shell</span></li>
+        <li><span class="acronym">CLI</span><span class="full-form">Command Line Interface</span></li>
+        <li><span class="acronym">GUI</span><span class="full-form">Graphical User Interface</span></li>
+        <li><span class="acronym">RAM</span><span class="full-form">Random Access Memory</span></li>
+        <li><span class="acronym">ROM</span><span class="full-form">Read-Only Memory</span></li>
+        <li><span class="acronym">CPU</span><span class="full-form">Central Processing Unit</span></li>
+        <li><span class="acronym">GPU</span><span class="full-form">Graphics Processing Unit</span></li>
+        <li><span class="acronym">SSD</span><span class="full-form">Solid State Drive</span></li>
+        <li><span class="acronym">HDD</span><span class="full-form">Hard Disk Drive</span></li>
+        <li><span class="acronym">BIOS</span><span class="full-form">Basic Input/Output System</span></li>
+        <li><span class="acronym">OS</span><span class="full-form">Operating System</span></li>
+        <li><span class="acronym">VM</span><span class="full-form">Virtual Machine</span></li>
+        <li><span class="acronym">VPN</span><span class="full-form">Virtual Private Network</span></li>
+        <li><span class="acronym">LAN</span><span class="full-form">Local Area Network</span></li>
+        <li><span class="acronym">WAN</span><span class="full-form">Wide Area Network</span></li>
+        <li><span class="acronym">MAC</span><span class="full-form">Media Access Control</span></li>
     </ul>
 
     <script>
